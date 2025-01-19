@@ -1,24 +1,9 @@
-# [[ICCV'23](https://openaccess.thecvf.com/content/ICCV2023/html/Zhou_Gloss-Free_Sign_Language_Translation_Improving_from_Visual-Language_Pretraining_ICCV_2023_paper.html)] Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining
+<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a> 
 
-<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>  [![report](https://img.shields.io/badge/ArXiv-Paper-red)](https://arxiv.org/abs/2307.14768)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gloss-free-sign-language-translation/gloss-free-sign-language-translation-on)](https://paperswithcode.com/sota/gloss-free-sign-language-translation-on?p=gloss-free-sign-language-translation)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gloss-free-sign-language-translation/gloss-free-sign-language-translation-on-csl)](https://paperswithcode.com/sota/gloss-free-sign-language-translation-on-csl?p=gloss-free-sign-language-translation)
+This repo is attached to my BA thesis. I will try to reproduce the results of the paper belonging to the original repository. This repo was forked from [[here](https://github.com/zhoubenjia/GFSLT-VLP)]. You can find their paper [[here](https://openaccess.thecvf.com/content/ICCV2023/html/Zhou_Gloss-Free_Sign_Language_Translation_Improving_from_Visual-Language_Pretraining_ICCV_2023_paper.html)].
 
 
-This repo is the official implementation of "Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining" as well as the follow-ups. It currently includes code and models for the following tasks:
-
-> **Gloss-free Sign Language Translation**: Included in this repo.
-
-> **Visual-Language Pre-training in SLT Tasks.**: Included in this repo.
-
-<img src="./demo/slt_approach.gif" alt="" style="zoom: 60%;" />
-
-## NEWS
-
-***2023/12/26***
-
-1. One can use the official 12-layer Mbart decoder for text decoding by setting ```--decoder-type LLMD```. However, it is important to note that this requires pre-training using ```train_vlp.py```.
+The following instructions are taken from the according repo.
 
 ## Installation
 
@@ -29,10 +14,6 @@ conda activate gfslt
 # Please install PyTorch according to your CUDA version.
 pip install -r requirements.txt
 ```
-
-
-## Getting Started
-<img src="./demo/pipeline.jpg" alt="" style="zoom: 60%;" />
 
 ### Preparation
 Please refer to [pretrain_models](pretrain_models/README.md) to prepare MBart weight file and GFSLT model.
@@ -68,7 +49,7 @@ However, to use these commands, you need to install the [nlgeval](https://github
 
 ## Citation
 
-If you find our work useful for your project, please consider citing the paper:
+If you find their work useful for your project, please consider citing their paper:
 
 ```bibtex
 @InProceedings{Zhou_2023_ICCV,
@@ -82,4 +63,4 @@ If you find our work useful for your project, please consider citing the paper:
 ```
 
 # LICENSE
-The code is released under the MIT license.
+The original code is released under the MIT license.
