@@ -1,11 +1,12 @@
-
 from transformers import MBartForConditionalGeneration, MBartTokenizer, MBartConfig
 
 from hftrim.ModelTrimmers import MBartTrimmer
 
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 import utils
 from hftrim.TokenizerTrimmer import TokenizerTrimmer
-
 
 raw_data = utils.load_dataset_file('data/Phonexi-2014T/labels.train')
 

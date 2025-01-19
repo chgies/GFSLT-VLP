@@ -1,6 +1,7 @@
 {
   "additional_special_tokens": null,
   "bos_token": "<s>",
+  "clean_up_tokenization_spaces": true,
   "cls_token": "<s>",
   "eos_token": "</s>",
   "mask_token": {
@@ -12,11 +13,9 @@
     "single_word": false
   },
   "model_max_length": 1024,
-  "name_or_path": "/tmp/6f954bd236e04c5ebe44530f50f9509f",
   "pad_token": "<pad>",
   "sep_token": "</s>",
   "sp_model_kwargs": {},
-  "special_tokens_map_file": null,
   "src_lang": "de_DE",
   "tgt_lang": "de_DE",
   "tokenizer_class": "MBartTokenizer",
